@@ -1,0 +1,178 @@
+/* ===== Estilo general ===== */
+body {
+  margin: 0; /* Quita márgenes por defecto del navegador */
+  font-family: Arial, sans-serif; /* Fuente general del sitio */
+  color: white; /* Color de texto principal */
+  background-color: #111; /* Fondo oscuro para toda la página */
+}
+
+/* ===== Header con fondo ===== */
+.hero {
+  background-image: url("fondo.jpg"); /* Imagen de fondo del encabezado */
+  background-size: cover; /* La imagen cubre todo el área */
+  background-position: center; /* Centra la imagen */
+  text-align: center; /* Centra el contenido dentro del header */
+  padding: 80px 20px 40px; /* Espaciado interno arriba, lados y abajo */
+}
+
+.hero h1 {
+  font-size: 48px; /* Tamaño grande para el título principal */
+  margin: 0; /* Elimina márgenes extra */
+  color: #eff5f4; /* Color llamativo para el título */
+  text-shadow: 2px 2px 6px black; /* Sombra para resaltar el texto */
+}
+
+/* ===== Menú de navegación ===== */
+nav ul {
+  list-style: none; /* Quita viñetas de la lista */
+  padding: 0; /* Elimina espacio interno */
+  display: flex; /* Coloca los elementos en fila */
+  justify-content: center; /* Centra el menú horizontalmente */
+  gap: 20px; /* Espacio entre cada enlace */
+}
+
+nav ul li a {
+  text-decoration: none; /* Quita subrayado de los enlaces */
+  color: white; /* Texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  padding: 10px 15px; /* Espaciado interno de cada enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background 0.3s; /* Animación suave al pasar el mouse */
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  background-color: #006644; /* Color de fondo al pasar el mouse o página activa */
+}
+
+/* ===== Secciones generales ===== */
+main {
+  padding: 40px; /* Espaciado interno general */
+  max-width: 1000px; /* Ancho máximo del contenido */
+  margin: auto; /* Centra el contenido */
+}
+
+h2 {
+  color: #00ffcc; /* Color de los subtítulos */
+  margin-bottom: 10px; /* Espacio debajo del subtítulo */
+}
+
+/* ===== Tarjetas de promociones y productos ===== */
+.promo-card, .producto-card {
+  background-color: #222; /* Fondo oscuro para las tarjetas */
+  padding: 20px; /* Espaciado interno */
+  margin: 15px 0; /* Espacio entre tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra para dar relieve */
+  text-align: center; /* Centra el contenido dentro de la tarjeta */
+}
+
+/* ===== Catálogo con imágenes ===== */
+.catalogo {
+  padding: 40px; /* Espaciado interno */
+  max-width: 1000px; /* Ancho máximo */
+  margin: auto; /* Centrado */
+  display: grid; /* Usa cuadrícula para organizar productos */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta columnas automáticamente */
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+.producto-card img {
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  height: 180px; /* Altura fija */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  border-radius: 6px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.producto-card h3 {
+  color: #00ffcc; /* Color del título del producto */
+  margin: 10px 0; /* Espacio arriba y abajo */
+}
+
+/* ===== Perfil de creadores ===== */
+.creadores {
+  padding: 40px; /* Espaciado interno */
+  max-width: 900px; /* Ancho máximo */
+  margin: auto; /* Centrado */
+}
+
+.perfil {
+  background-color: #222; /* Fondo oscuro para cada perfil */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px 0; /* Espacio entre perfiles */
+  border-radius: 8px; /* Bordes redondeados */
+  display: flex; /* Coloca foto y texto en fila */
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espacio entre foto y texto */
+}
+
+.perfil .foto {
+  width: 120px; /* Ancho de la foto */
+  height: 120px; /* Alto de la foto */
+  border-radius: 50%; /* Foto circular */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+/* ===== Formulario de contacto ===== */
+.contacto {
+  padding: 40px; /* Espaciado interno */
+  max-width: 600px; /* Ancho máximo */
+  margin: auto; /* Centrado */
+}
+
+form {
+  display: flex; /* Coloca los campos en columna */
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px; /* Espacio alrededor de las etiquetas */
+  font-weight: bold; /* Texto en negrita */
+}
+
+input, textarea {
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de texto */
+  margin-bottom: 15px; /* Espacio entre campos */
+}
+
+textarea {
+  resize: vertical; /* Permite ajustar altura */
+  min-height: 100px; /* Altura mínima */
+}
+
+button {
+  padding: 12px; /* Espaciado interno */
+  background-color: #07a877e6; /* Color de fondo del botón */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de texto */
+  cursor: pointer; /* Cambia cursor a mano */
+}
+
+button:hover {
+  background-color: #00ffcc; /* Color al pasar el mouse */
+  color: black; /* Texto negro al pasar el mouse */
+}
+
+/* ===== Footer ===== */
+footer {
+  background-image: url("fondo.jpg"); /* Imagen de fondo del encabezado */
+  background-color: #0d946ce0; /* Color de fondo del pie de página */
+  text-align: center; /* Centra el contenido */
+  padding: 15px; /* Espaciado interno */
+  position: fixed; /* Fijo en la parte inferior */
+  bottom: 0; /* Ubicado abajo */
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+footer a {
+  color: #f4f6f5; /* Color de los enlaces */
+  text-decoration: none; /* Quita subrayado */
+}
+
+
